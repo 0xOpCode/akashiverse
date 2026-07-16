@@ -4,6 +4,6 @@
   "description": "All Language Contents",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/plugins.json"
+    "https://github.com/0xOpCode/akashiverse/raw/refs/heads/main/plugins.json"
   ]
 }
