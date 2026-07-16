@@ -1,0 +1,23 @@
+[
+    {
+        "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/CNC%20Verse%20Mobile/logo.jpeg",
+        "fileHash": "sha256-2d90a4bdd3def66e39b58d84b11799212279c2df320a51dd7c0f353fcbbcc25b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+        "fileSize": 91400,
+        "status": 1,
+        "language": "ta",
+        "authors": [
+            "NivinCNC"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 3,
+        "internalName": "CNC Verse Mobile",
+        "description": "NetMirror Mobile API",
+        "url": "https://github.com/0xOpCode/akashiverse/raw/refs/heads/main/CNC Verse Mobile.cs3",
+        "name": "CNC Verse Mobile"
+    }
+]
