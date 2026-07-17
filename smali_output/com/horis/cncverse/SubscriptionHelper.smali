@@ -1047,62 +1047,11 @@
 .end method
 
 .method public final isSubscribed(Landroid/content/Context;)Z
-    .registers 5
+    .registers 3
     .param p1, "ctx"    # Landroid/content/Context;
-        .annotation build Lorg/jetbrains/annotations/Nullable;
-        .end annotation
-    .end param
 
-    .line 63
-    nop
+    const/4 v0, 0x1
 
-    .line 64
-    nop
-
-    .line 63
-    if-eqz p1, :cond_17
-
-    const-string v0, "CNCVerseSubscription"
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v0
-
-    .line 64
-    if-eqz v0, :cond_17
-
-    .line 63
-    nop
-
-    .line 64
-    const-string v1, "mode"
-
-    const-string v2, "ads"
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_18
-
-    .line 63
-    :cond_17
-    const/4 v0, 0x0
-
-    .line 64
-    :goto_18
-    nop
-
-    .line 63
-    const-string v1, "subscription"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    .line 64
     return v0
 .end method
 
@@ -1117,111 +1066,8 @@
 .end method
 
 .method public final showPopupIfNeeded(Landroid/content/Context;)V
-    .registers 6
+    .registers 2
     .param p1, "ctx"    # Landroid/content/Context;
-        .annotation build Lorg/jetbrains/annotations/Nullable;
-        .end annotation
-    .end param
 
-    .line 72
-    if-nez p1, :cond_3
-
-    return-void
-
-    .line 73
-    :cond_3
-    sget-boolean v0, Lcom/horis/cncverse/SubscriptionHelper;->popupShown:Z
-
-    if-eqz v0, :cond_8
-
-    return-void
-
-    .line 74
-    :cond_8
-    invoke-virtual {p0, p1}, Lcom/horis/cncverse/SubscriptionHelper;->isSubscribed(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_f
-
-    return-void
-
-    .line 76
-    :cond_f
-    const-string v0, "CNCVerseSubscription"
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v0
-
-    .line 77
-    .local v0, "prefs":Landroid/content/SharedPreferences;
-    const-string v2, "dont_show_ads_popup"
-
-    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_22
-
-    sput-boolean v2, Lcom/horis/cncverse/SubscriptionHelper;->popupShown:Z
-
-    return-void
-
-    .line 78
-    :cond_22
-    nop
-
-    .line 79
-    :try_start_23
-    sget-object v1, Lcom/lagradost/cloudstream3/ui/settings/Globals;->INSTANCE:Lcom/lagradost/cloudstream3/ui/settings/Globals;
-
-    .line 80
-    const/4 v3, 0x2
-
-    invoke-virtual {v1, v3}, Lcom/lagradost/cloudstream3/ui/settings/Globals;->isLayout(I)Z
-
-    move-result v1
-    :try_end_2a
-    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_2a} :catch_2e
-
-    .line 79
-    nop
-
-    .line 81
-    .local v1, "isTV":Z
-    if-eqz v1, :cond_2f
-
-    return-void
-
-    .line 82
-    .end local v1    # "isTV":Z
-    :catch_2e
-    move-exception v1
-
-    .line 84
-    :cond_2f
-    sput-boolean v2, Lcom/horis/cncverse/SubscriptionHelper;->popupShown:Z
-
-    .line 86
-    new-instance v1, Landroid/os/Handler;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    new-instance v2, Lcom/horis/cncverse/SubscriptionHelper$$ExternalSyntheticLambda2;
-
-    invoke-direct {v2, p1}, Lcom/horis/cncverse/SubscriptionHelper$$ExternalSyntheticLambda2;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 214
     return-void
 .end method

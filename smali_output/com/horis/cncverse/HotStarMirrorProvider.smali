@@ -2019,6 +2019,8 @@
 .method private final showSubscriptionPopupIfNeeded()V
     .registers 7
 
+    return-void
+
     .line 378
     sget-object v0, Lcom/horis/cncverse/HotStarMirrorProvider;->context:Landroid/content/Context;
 
@@ -3072,11 +3074,11 @@
 .method private final showTelegramPopup()V
     .registers 6
 
+    return-void
+
     .line 498
     sget-object v0, Lcom/lagradost/cloudstream3/ui/settings/Globals;->INSTANCE:Lcom/lagradost/cloudstream3/ui/settings/Globals;
-
     const/4 v1, 0x2
-
     invoke-virtual {v0, v1}, Lcom/lagradost/cloudstream3/ui/settings/Globals;->isLayout(I)Z
 
     move-result v0

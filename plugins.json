@@ -1,9 +1,9 @@
-[{
+﻿[{
     "iconUrl":  "https://raw.githubusercontent.com/0xOpCode/akashiverse/refs/heads/main/logo.jpeg",
-    "fileHash":  "sha256-58c8e2808bbc5db204571f69939a5cfc901e73cc67f234930f93f63918f03c62",
+    "fileHash":  "sha256-468ba93a7ac2dfe2dabb5d60ff6e8072ada3343dd0f9389447e919980f620d7f",
     "apiVersion":  1,
     "repositoryUrl":  "https://github.com/0xOpCode/akashiverse",
-    "fileSize":  89706,
+    "fileSize":  89578,
     "status":  1,
     "language":  "hi",
     "authors":  [
@@ -14,8 +14,8 @@
                     "TvSeries"
                 ],
     "version":  3,
-    "internalName":  "CNC Verse Mobile",
-    "description":  "NetMirror Mobile API",
-    "url":  "https://raw.githubusercontent.com/0xOpCode/akashiverse/refs/heads/main/CNC Verse Mobile.cs3",
-    "name":  "CNC Verse Mobile"
+    "internalName":  "OpVerse Mobile",
+    "description":  "Premium multi-source mirror player for Indian movies \u0026 web series.",
+    "url":  "https://raw.githubusercontent.com/0xOpCode/akashiverse/refs/heads/main/OpVerse Mobile.cs3",
+    "name":  "OpVerse Mobile"
 }]

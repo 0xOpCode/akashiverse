@@ -2016,6 +2016,8 @@
 .method private final showSubscriptionPopupIfNeeded()V
     .registers 7
 
+    return-void
+
     .line 362
     sget-object v0, Lcom/horis/cncverse/PrimeVideoMirrorProvider;->context:Landroid/content/Context;
 
@@ -3068,6 +3070,8 @@
 
 .method private final showTelegramPopup()V
     .registers 6
+
+    return-void
 
     .line 482
     sget-object v0, Lcom/lagradost/cloudstream3/ui/settings/Globals;->INSTANCE:Lcom/lagradost/cloudstream3/ui/settings/Globals;

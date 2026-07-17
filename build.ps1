@@ -1,5 +1,5 @@
 # ============================================================
-#  build.ps1 — CNC Verse Mobile CS3 Plugin Build Script
+#  build.ps1 — OpVerse Mobile CS3 Plugin Build Script
 #  Usage: .\build.ps1
 # ============================================================
 
@@ -10,13 +10,13 @@ $TOOLS       = "$ROOT\tools"
 $SMALI_JAR   = "$TOOLS\smali.jar"
 $BAKSMALI_JAR= "$TOOLS\baksmali.jar"
 $SMALI_DIR   = "$ROOT\smali_output"
-$PLUGIN_DIR  = "$ROOT\CNC Verse Mobile"
-$CS3_FILE    = "$ROOT\CNC Verse Mobile.cs3"
+$PLUGIN_DIR  = "$ROOT\OpVerse Mobile"
+$CS3_FILE    = "$ROOT\OpVerse Mobile.cs3"
 $PLUGINS_JSON= "$ROOT\plugins.json"
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  CNC Verse Mobile - Build Script" -ForegroundColor Cyan
+Write-Host "  OpVerse Mobile - Build Script" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -58,7 +58,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 )
 
 $cs3Size = (Get-Item "$CS3_FILE").Length
-Write-Host "  -> CNC Verse Mobile.cs3 created ($cs3Size bytes)" -ForegroundColor Green
+Write-Host "  -> OpVerse Mobile.cs3 created ($cs3Size bytes)" -ForegroundColor Green
 
 # ----------------------------------------------------------
 # Step 3: Calculate SHA256 hash
